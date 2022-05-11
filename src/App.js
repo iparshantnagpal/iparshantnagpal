@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+/**
+ * Component Name : App.js
+ * Description: contains router information 
+ */
+
+
+import React, {Fragment, lazy} from "react";
+import { BrowserRouter as Router, 
+  Routes,
+  Route,
+  Navigate
+ } from "react-router-dom";
+import CampaignBanner from "./components/CampaignBanner";
+import Navigation from "./components/Header/Navigation";
+
+/**
+ * Lazy loading of componenets 
+ */
+const Home = lazy(() => import("./containers/Home/Home"));
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Router>
+      <CampaignBanner/>
+      <Navigation/>
+       <React.Suspense fallback={<div/>}>
+          <Routes>
+            <Route  path="/" element={<Home/>}/>  
+          </Routes> 
+       </React.Suspense>
+  
+      </Router>
+    </Fragment>
   );
 }
 

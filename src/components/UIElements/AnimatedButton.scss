@@ -1,0 +1,40 @@
+
+@import '../../common/util/variables';
+
+@mixin button {
+    font-family: $font-family-primary;
+    border: none;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: $border-radius-1;
+    cursor: pointer;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: $color-primary-1 0 2px 8px 0;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.button {
+    @include button;
+    border: 1.5px solid $color-primary-1;
+    background: $color-primary-1;
+    &:hover {
+        background: lighten($color: $color-primary-1, $amount: 5%);
+        border: 1.5px solid lighten($color: $color-primary-1, $amount: 10%)
+    } 
+    .button__text {
+        color: $text-color-light
+    }
+}
+
+.button-outline {
+    @include button;
+    border: 1.5px solid $color-primary-1;
+    background: transparent;
+    &:hover {
+       background: $color-primary-1; 
+    }
+    .button__text{
+        color: $text-color-light
+    }
+}
