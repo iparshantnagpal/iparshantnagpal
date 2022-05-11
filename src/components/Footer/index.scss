@@ -1,0 +1,57 @@
+@use '../../common/util/mixins';
+@import '../../common/util/variables';
+
+
+
+#footer {
+    background: $color-secondary-6;
+} 
+footer {
+    margin: auto 7% 0 7%;
+    padding: 4rem 2rem;
+
+    @media screen and  (max-width: $screen-xss) {
+     padding : 4rem 1rem;      
+    }
+    .extras {
+        @include mixins.anchor($text-color-light);
+        color: darken($color: $text-color-light, $amount: 25%)
+    }
+
+    .visits{
+        background: $color-primary-8;
+        color: $text-color-dark;
+        padding: 0.2rem 0.5rem;
+        border-radius: $border-radius-1;
+    }
+    .social-icon {
+        font-size: 2rem;
+        margin : 0.2%;
+        &:hover {
+            color: darken($color : $text-color-light, $amount: 15%)
+        }
+    }
+    .divider{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: $color-secondary-3;
+        margin : 1rem 0;
+    
+    }
+  .row {
+    align-items: center;
+  }
+}
+
+.copyright {
+    background: lighten($color: $color-secondary-6, $amount: 10%);
+    padding: 2% 7%;
+    text-align: center;
+    color: darken($color: $text-color-light, $amount: 25%);
+    p {
+       color: darken($color: $text-color-light, $amount: 25%);
+    }
+
+}

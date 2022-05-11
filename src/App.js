@@ -11,7 +11,9 @@ import { BrowserRouter as Router,
   Navigate
  } from "react-router-dom";
 import CampaignBanner from "./components/CampaignBanner";
+import Footer from "./components/Footer";
 import Navigation from "./components/Header/Navigation";
+
 
 /**
  * Lazy loading of componenets 
@@ -30,7 +32,7 @@ function App() {
             <Route  path="/" element={<Home/>}/>  
           </Routes> 
        </React.Suspense>
-  
+      <Footer/>
       </Router>
     </Fragment>
   );

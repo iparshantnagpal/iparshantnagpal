@@ -6,7 +6,6 @@
 .hero {
   margin: 5%;
   &__content{
-    background-color: pink;
     &__title-second {
       color:$color-primary-1
     } 
@@ -47,7 +46,6 @@
     }
   }
   &__image {
-    background-color: red;
     transform: rotateY(180deg);
     img {
       margin-top : -20%;
