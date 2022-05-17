@@ -13,6 +13,7 @@ import { BrowserRouter as Router,
 import CampaignBanner from "./components/CampaignBanner";
 import Footer from "./components/Footer";
 import Navigation from "./components/Header/Navigation";
+import Work from "./containers/Work";
 
 
 /**
@@ -30,6 +31,7 @@ function App() {
        <React.Suspense fallback={<div/>}>
           <Routes>
             <Route  path="/" element={<Home/>}/>  
+            <Route path="/work" element={<Work/>}/>
           </Routes> 
        </React.Suspense>
       <Footer/>

@@ -1,0 +1,59 @@
+@import '../../common/util/variables';
+
+.project-card {
+   
+    .card{
+        box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .card-title {
+        white-space: nowrap;
+    }
+
+    &__details {
+        &__tech-stack {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0.5rem 0.2rem;
+            border-radius: $border-radius-2;
+            background: $color-primary-4;
+
+            img {
+                width: 10%;
+                height: auto;
+
+                &:hover {
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                }
+
+                @media screen and (max-width: $screen-sm) {
+                    width: 20%;
+                }
+            }
+        }
+
+
+    }
+
+    &__links {
+        .col {
+            white-space: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: $text-color-light;
+
+            &:hover {
+                color: darken($color: $text-color-light, $amount: 20%)
+            }
+
+        }
+    }
+
+
+}
