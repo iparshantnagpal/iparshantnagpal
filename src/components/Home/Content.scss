@@ -38,4 +38,33 @@
         }
         
     }
+
+    &__strengths{
+        margin-top: 7%;
+        text-align: center;
+         
+        &__header{
+           color: $color-primary-3; 
+        }
+        .strengths{
+            margin: 5% 2%;
+            &__item{
+                &__image {
+                    img {
+                        width:100%;
+                        height:auto;
+                        background: $color-secondary-5;
+                        border-radius: $border-radius-5;
+
+                    }
+                }
+               &__content{
+                   margin-top:10%;
+                   h3 {
+                       color: $color-primary-7;
+                   }
+               } 
+            }
+        }
+    }
 }

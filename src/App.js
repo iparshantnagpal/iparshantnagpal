@@ -13,6 +13,7 @@ import { BrowserRouter as Router,
 import CampaignBanner from "./components/CampaignBanner";
 import Footer from "./components/Footer";
 import Navigation from "./components/Header/Navigation";
+import { LoadingSpinner } from "./components/UIElements";
 import Work from "./containers/Work";
 
 
@@ -28,7 +29,7 @@ function App() {
       <Router>
       <CampaignBanner/>
       <Navigation/>
-       <React.Suspense fallback={<div/>}>
+       <React.Suspense fallback={<LoadingSpinner/>}>
           <Routes>
             <Route  path="/" element={<Home/>}/>  
             <Route path="/work" element={<Work/>}/>

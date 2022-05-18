@@ -6,4 +6,5 @@ export {default as ProjectCard} from "./ProjectCard";
 export {default as BackToTop} from "./BackToTop";
 export {default as AnimatedCounter} from './AnimatedCounter';
 export {default as LoadingProjectCard } from "./LoadingAnimations/LoadingProjectCard";
+export {default as LoadingSpinner} from "./LoadingAnimations/LoadingSpinner";
 
