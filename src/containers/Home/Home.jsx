@@ -21,7 +21,7 @@ const [projects, setProjects] = useState([])
   },[sendRequest])
 
     return(<div>
-        {/* <Hero/> */}
+        <Hero/>
          <Content  projects={projects}  isLoading={isLoading} error={error} />
         <BackToTop/>
     </div>)
