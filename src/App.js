@@ -14,6 +14,7 @@ import CampaignBanner from "./components/CampaignBanner";
 import Footer from "./components/Footer";
 import Navigation from "./components/Header/Navigation";
 import { LoadingSpinner } from "./components/UIElements";
+import AllProjects from "./components/Work/Projects/AllProjects";
 import Work from "./containers/Work";
 
 
@@ -33,6 +34,7 @@ function App() {
           <Routes>
             <Route  path="/portfolio" element={<Home/>}/>  
             <Route path="/work" element={<Work/>}/>
+            <Route path="/work/projects" element={<AllProjects/>}/>
           </Routes> 
        </React.Suspense>
       <Footer/>

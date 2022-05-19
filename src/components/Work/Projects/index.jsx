@@ -15,8 +15,8 @@ const Projects = (props) => {
   return (
     <>
       <Container>
-        <div>
-          <div>
+        <div className="projects">
+          <div className="projects__header"> 
             <h1>
               Projects
             </h1>
@@ -27,7 +27,7 @@ const Projects = (props) => {
             </Link>
           </div>
         </div>
-        <div>
+        <div className="projects__container">
           <Row className="mt-5">
             {!props.isLoading &&
               props.projects &&
