@@ -31,7 +31,7 @@ function App() {
       <Navigation/>
        <React.Suspense fallback={<LoadingSpinner/>}>
           <Routes>
-            <Route  path="/" element={<Home/>}/>  
+            <Route  path="/portfolio" element={<Home/>}/>  
             <Route path="/work" element={<Work/>}/>
           </Routes> 
        </React.Suspense>

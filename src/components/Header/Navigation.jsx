@@ -15,7 +15,7 @@ const Navigation = () => {
     } 
     return (<nav id="navbar">
         <div className="nav__brand">
-            <Link to="/">
+            <Link to="/portfolio">
                 <img src={Logo} alt="its Parshant logo" />
             </Link>
 
@@ -89,7 +89,7 @@ const Navigation = () => {
             <ul>
                 <li>
                     <NavLink 
-                    to="/" 
+                    to="/portfolio" 
                     style={({isActive})=>({color: isActive && '#ff5403'})}
                    >
                      Home
