@@ -15,6 +15,7 @@ import Footer from "./components/Footer";
 import Navigation from "./components/Header/Navigation";
 import { LoadingSpinner } from "./components/UIElements";
 import AllProjects from "./components/Work/Projects/AllProjects";
+import ProjectDetails from "./components/Work/Projects/ProjectDetails";
 import Work from "./containers/Work";
 
 
@@ -35,6 +36,7 @@ function App() {
             <Route  path="/portfolio" element={<Home/>}/>  
             <Route path="/work" element={<Work/>}/>
             <Route path="/work/projects" element={<AllProjects/>}/>
+            <Route path="/work/projects/:repoName" element={<ProjectDetails/>}/>
           </Routes> 
        </React.Suspense>
       <Footer/>

@@ -41,7 +41,7 @@ const Video = (props) => {
         playButton.setAttribute('class', 'play');
         div.appendChild(playButton);
 
-        if (videoId) {
+        if (videoId) {  
           div.onclick = function () {
             createIframe(this);
           };
