@@ -14,7 +14,8 @@ import { Col, Container, Row } from "react-bootstrap";
 
 import { AnimatedButton } from "../UIElements";
 import { HiDownload } from "react-icons/hi";
-import Resume from '../../assets/documents/resume.pdf';
+// import Resume from '../../assets/documents/resume.pdf';
+let Resume = "https://docs.google.com/document/d/1YYE5HiHfLhaZ_6W18Nvv7J_03O52YMYhZr_x0uvbAdc/edit?usp=sharing"
 const words = ['Full Stack Developer', 'MERN Stack Developer', 'MEAN Stack Developer', 'React-Native Developer', 'Flutter Developer', 'React Developer', 'Project Manager', 'Invester and Trader'];
 
 
