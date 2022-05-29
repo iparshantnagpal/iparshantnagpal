@@ -1,16 +1,17 @@
 import React, { useEffect } from 'react';
 import { Container } from 'react-bootstrap';
-import GithubCalendar from 'github-calendar';
-import 'github-calendar/dist/github-calendar-responsive.css';
-import 'github-calendar/dist/github-calendar.min.js';
+// import GithubCalendar from 'github-calendar';
+// import 'github-calendar/dist/github-calendar-responsive.css';
+// import 'github-calendar/dist/github-calendar.css';
+// import 'github-calendar/dist/github-calendar.min.js';
 
 import './ContributionsGraph.scss';
 
 const ContributionsGraph = () => {
   useEffect(() => {
-    GithubCalendar('.calendar', 'RakeshPotnuru', {
-      tooltips: true
-    });
+    // GithubCalendar('.calendar', 'RakeshPotnuru', {
+    //   tooltips: true
+    // });
   }, []);
 
   return (

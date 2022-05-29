@@ -44,7 +44,7 @@ const techData = [
   },
   {
     techName: 'FIREBASE',
-    imageUrl: prefix + 'firebase/firebase-plain.svg'
+    imageUrl: prefix + 'firebase/ -plain.svg'
   },
   {
     techName: 'JQUERY',

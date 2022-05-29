@@ -14,15 +14,19 @@ import CampaignBanner from "./components/CampaignBanner";
 import Footer from "./components/Footer";
 import Navigation from "./components/Header/Navigation";
 import { LoadingSpinner } from "./components/UIElements";
-import AllProjects from "./components/Work/Projects/AllProjects";
-import ProjectDetails from "./components/Work/Projects/ProjectDetails";
-import Work from "./containers/Work";
 
 
 /**
  * Lazy loading of componenets 
  */
 const Home = lazy(() => import("./containers/Home/Home"));
+const Work = lazy(()=>import("./containers/Work"));
+const ProjectDetails = lazy(()=>import("./components/Work/Projects/ProjectDetails"));
+const AllProjects = lazy(()=>import("./components/Work/Projects/AllProjects"));
+const About = lazy(()=>import("./containers/About"));
+const Contact = lazy(()=>import("./containers/Contact"));
+
+
 
 
 function App() {
@@ -34,6 +38,8 @@ function App() {
        <React.Suspense fallback={<LoadingSpinner/>}>
           <Routes>
             <Route  path="/portfolio" element={<Home/>}/>  
+            <Route path="/about" element={<About/>}/>
+            <Route path="/contact" element={<Contact/>}/>
             <Route path="/work" element={<Work/>}/>
             <Route path="/work/projects" element={<AllProjects/>}/>
             <Route path="/work/projects/:repoName" element={<ProjectDetails/>}/>

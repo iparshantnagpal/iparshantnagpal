@@ -4871,7 +4871,7 @@ github-calendar-parser@^1.1.13:
 
 github-calendar@^2.2.9:
   version "2.2.9"
-  resolved "https://registry.npmjs.org/github-calendar/-/github-calendar-2.2.9.tgz"
+  resolved "https://registry.yarnpkg.com/github-calendar/-/github-calendar-2.2.9.tgz#821dbdf5740e02b64da4d30f9a52543079463da1"
   integrity sha512-mJo9PO7WtwIylcxAltKv/H/gIhXg7A2zJED0YN85WD81N+6z9+nSJLdjvREKncrl+ONDPCHGyYP38gmdyegmCw==
   dependencies:
     add-subtract-date "^1.0.15"

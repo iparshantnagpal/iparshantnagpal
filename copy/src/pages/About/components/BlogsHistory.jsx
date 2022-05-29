@@ -24,7 +24,7 @@ const BlogsHistory = () => {
     <Container>
       <div className="blogs-history">
         <h2 className="blogs-history__title">Blogs History</h2>
-        <div className="blogs-history__card">
+        <div className="blogs-history__cards">
           <Row>
             {data.map((item, i) => {
               return (
