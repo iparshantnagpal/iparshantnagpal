@@ -4,9 +4,12 @@
  */
 
 import React, { Fragment } from "react";
+import ContactForm from "../../components/Contact/ContactForm";
 
 const Contact = () => {
     
-    return(<Fragment></Fragment>)
+    return(<Fragment>
+        <ContactForm/>
+    </Fragment>)
 }
 export default Contact;
